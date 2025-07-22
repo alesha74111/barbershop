@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BarberShop</title>
+    <meta name="theme-color" content="#fff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="img/favicons/apple-touch-icon-precomposed.png"
+    />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="img/favicons/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/favicons/apple-touch-icon-1024x1024.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="header header--fixed">
+      <div class="header__wrapper container" data-header>
+        <a
+          href="#"
+          class="header__logo logo"
+          aria-label="Barbershop homepage"
+          id="logo"
+        >
+          <svg class="logo__icon" width="69" height="56">
+            <use href="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="header__nav nav" aria-label="Main navigation">
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#price" class="nav__link">Services and prices</a>
+            </li>
+            <li class="nav__item">
+              <a href="#our-masters" class="nav__link">Barbers</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <a href="tel:+15551234567" class="header__phone nav__link"
+            >+1 (555) 123-4567</a
+          >
+          <button type="button" class="header__button button" data-open-modal>
+            Online-booking
+          </button>
+        </div>
+        <a href="#" class="header-burger" data-mobile-open="">
+          <div class="header-burger__text">Menu</div>
+          <div class="header-burger__lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
+    </header>
+    <div class="mobile-menu" data-mobile-menu="">
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__inner">
+          <button class="mobile-button" data-mobile-close="" type="button">
+            <svg class="mobile-button__close">
+              <use href="img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#price" class="nav__link">Services and prices</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#our-masters" class="nav__link">Barbers</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#contact" class="nav__link">Contacts</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="tel:+15551234567" class="mobile-menu__phone nav__link"
+                >+1 (555) 123-4567</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <button
+                type="button"
+                class="mobile-menu__button button"
+                data-open-modal
+              >
+                Online-booking
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="sidebar-hero">
+        <div class="sidebar-hero__aside">
+          <ul class="sidebar-hero__social-list">
+            <li class="sidebar-hero__social-item">
+              <a href="#" class="sidebar-hero__social-link">Instagram</a>
+            </li>
+            <li class="sidebar-hero__social-item">
+              <a href="#" class="sidebar-hero__social-link">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar-hero__hero">
+          <div class="sidebar-hero__slider">
+            <div
+              class="sidebar-hero__slide"
+              style="background-image: url('../img/Sliderimg1.jpg')"
+            ></div>
+            <div
+              class="sidebar-hero__slide"
+              style="background-image: url('../img/Sliderimg2.jpg')"
+            ></div>
+            <div
+              class="sidebar-hero__slide"
+              style="background-image: url('../img/Sliderimg3.jpg')"
+            ></div>
+          </div>
+          <div class="sidebar-hero__text">
+            <p class="sidebar-hero__subtitle">A hair salon for men in USA</p>
+            <h1 class="sidebar-hero__title">BarberShop</h1>
+            <p class="sidebar-hero__description">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
+          <ul class="sidebar-hero__controls">
+            <li class="sidebar-hero__control-item">
+              <a
+                href="#"
+                class="link sidebar-hero__control-link"
+                aria-label="Previous slide"
+                >Back</a
+              >
+            </li>
+            <li class="sidebar-hero__control-item">
+              <a
+                href="#"
+                class="link sidebar-hero__control-link sidebar-hero__control-link--forward"
+                aria-label="Next slide"
+                >Forward</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="about" class="about section" aria-labelledby="about__title">
+        <div class="container">
+          <div class="about__media-wrapper">
+            <ul class="about__media-list">
+              <li class="about__media-item about__media-item--flip">
+                <div class="card">
+                  <div class="card__face card__face--front">
+                    <picture>
+                      <source
+                        srcset="img/about-img1-tablet.jpg 1x"
+                        media="(max-width: 992px)"
+                      />
+                      <img
+                        src="img/about-img1.jpg"
+                        alt="Barber shaving client with straight razor"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <p class="card__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Excepturi cum laboreem autem odit? Consectetur itaque quis
+                      eius! Incidunt reru quo? Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit. Excepturi cum laboreem autem
+                      odit? Consectetur itaque quis eius! Incidunt reru
+                      quo?Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit. Excepturi cum laboreem autem odit? Consectetur
+                      itaque quis eius! Incidunt reru quo?
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="about__media-item">
+                <picture>
+                  <source
+                    srcset="img/about-img2-tablet.jpg 1x"
+                    media="(max-width: 992px)"
+                  />
+                  <img
+                    src="img/about-img2.jpg"
+                    alt="Barber applying shaving cream to customer"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="about__content">
+            <p class="about__subtitle">About</p>
+            <h2 id="about__title" class="about__title">
+              Best Barbershop in your city
+            </h2>
+            <p class="about__description">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="about__text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="button button--black">
+              Online-booking
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        id="price"
+        class="price section"
+        aria-labelledby="price__subtitle price__title"
+      >
+        <div class="container">
+          <p id="price__subtitle" class="price__subtitle">
+            Spend your time with the best masters
+          </p>
+          <h2 id="price__title" class="price__title">Services and prices</h2>
+          <div class="price__list-wrapper">
+            <ul class="price__list">
+              <li class="price__item">
+                <span class="price__service">Men’s haircut</span>
+                <span class="price__line"></span>
+                <span class="price__cost">from $30</span>
+              </li>
+              <li class="price__item">
+                <span>Beard trim</span><span class="price__line"></span
+                ><span>from $25</span>
+              </li>
+              <li class="price__item">
+                <span>Mustache trim</span><span class="price__line"></span
+                ><span>from $15</span>
+              </li>
+              <li class="price__item">
+                <span>Straight razor shave</span
+                ><span class="price__line"></span><span>from $20</span>
+              </li>
+            </ul>
+            <ul class="price__list">
+              <li class="price__item">
+                <span>Trainee’s haircut</span><span class="price__line"></span
+                ><span>from $10</span>
+              </li>
+              <li class="price__item">
+                <span>Buzz cut</span><span class="price__line"></span
+                ><span>from $20</span>
+              </li>
+              <li class="price__item">
+                <span>Children’s haircut (0–12 y.o.)</span
+                ><span class="price__line"></span><span>from $25</span>
+              </li>
+              <li class="price__item">
+                <span>Gray hair camouflage</span
+                ><span class="price__line"></span><span>from $35</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price__button-wrapper">
+            <button type="button" class="button">Online-booking</button>
+          </div>
+        </div>
+      </section>
+      <section class="section feature" aria-labelledby="feature__title">
+        <div class="container">
+          <h2 class="visually-hidden" id="feature__title">Feature</h2>
+          <ul class="feature__list">
+            <li class="feature__item">
+              <span class="feature__number">600</span>
+              <p class="feature__text">Satisfied customers per day</p>
+            </li>
+            <li class="feature__item">
+              <span class="feature__number">50</span>
+              <p class="feature__text">Awards for excellent service</p>
+            </li>
+            <li class="feature__item">
+              <span class="feature__number">20</span>
+              <p class="feature__text">Top-rated barbers</p>
+            </li>
+            <li class="feature__item">
+              <span class="feature__number">100</span>
+              <p class="feature__text">Gifts for regular customers</p>
+            </li>
+          </ul>
+          <div class="feature__content">
+            <p class="feature__subtitle">Old traditional school</p>
+            <h3 class="feature__title">
+              ¿Why people come <br />
+              to us?
+            </h3>
+            <p class="feature__description">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="our-masters"
+        class="section our-masters"
+        aria-labelledby="our-masters-title"
+      >
+        <div class="container">
+          <p class="our-masters__subtitle">
+            For true enjoyers of the atmosphere
+          </p>
+          <h2 id="our-masters-title" class="our-masters__title">Our barbers</h2>
+          <ul class="our-masters__list">
+            <li class="our-masters__item">
+              <div class="our-masters__thumb">
+                <img
+                  src="img/John-Smith.jpg"
+                  alt="John Smith"
+                  width="370"
+                  class="our-masters__photo"
+                />
+                <p class="our-masters__cover-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Maxime quas magnam quis excepturi! Distinctio at temporibus
+                  quas repellendus suscipit labore fugit quisquam neque tempora
+                  voluptate praesentium asperiores voluptatum, perferendis
+                  quaerat rerum, corporis qui!
+                </p>
+              </div>
+              <h3 class="our-masters__name">John Smith</h3>
+              <p class="our-masters__position">Extreme Barber</p>
+              <ul class="our-masters__social-list">
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to instagram"
+                    class="link our-masters__social-link"
+                  >
+                    <svg
+                      class="link-icon our-masters__social-icon"
+                      width="20"
+                      height="20"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <use href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to twitter"
+                    class="link our-masters__social-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to facebook"
+                    class="link our-masters__social-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to linkedin"
+                    class="link our-masters__social-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="our-masters__item">
+              <div class="our-masters__thumb">
+                <img
+                  src="img/Michele-Doe.jpg"
+                  alt="Michele Doe"
+                  width="370"
+                  class="our-masters__photo"
+                />
+                <p class="our-masters__cover-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Maxime quas magnam quis excepturi! Distinctio at temporibus
+                  quas repellendus suscipit labore fugit quisquam neque tempora
+                  voluptate praesentium asperiores voluptatum, perferendis
+                  quaerat rerum, corporis qui!
+                </p>
+              </div>
+              <h3 class="our-masters__name">Michele Doe</h3>
+              <p class="our-masters__position">Extreme Barber</p>
+              <ul class="our-masters__social-list">
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to instagram"
+                    class="link our-masters__social-link"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <use href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to twitter"
+                    class="link our-masters__social-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to facebook"
+                    class="link our-masters__social-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to linkedin"
+                    class="link our-masters__social-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="our-masters__item">
+              <div class="our-masters__thumb">
+                <img
+                  src="img/Alan-Black.jpg"
+                  alt="Alan Black"
+                  width="370"
+                  class="our-masters__photo"
+                />
+                <p class="our-masters__cover-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Maxime quas magnam quis excepturi! Distinctio at temporibus
+                  quas repellendus suscipit labore fugit quisquam neque tempora
+                  voluptate praesentium asperiores voluptatum, perferendis
+                  quaerat rerum, corporis qui!
+                </p>
+              </div>
+              <h3 class="our-masters__name">Alan Black</h3>
+              <p class="our-masters__position">Extreme Barber</p>
+              <ul class="our-masters__social-list">
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to instagram"
+                    class="link our-masters__social-link"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <use href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to twitter"
+                    class="link our-masters__social-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to facebook"
+                    class="link our-masters__social-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="our-masters__social-item">
+                  <a
+                    href="#"
+                    aria-label="link to linkedin"
+                    class="link our-masters__social-link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <svg
+                      class="our-masters__social-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="gallery section" aria-labelledby="gallery-title">
+        <div class="container">
+          <h2 id="gallery-title" class="visually-hidden">Gallery</h2>
+          <p class="gallery__subtitle">In Latin, "barba" means "beard"</p>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <p
+                class="gallery__text-hover gallery__text-hover--top"
+                aria-hidden="true"
+              >
+                MEN'S
+              </p>
+              <p
+                class="gallery__text-hover gallery__text-hover--bottom"
+                aria-hidden="true"
+              >
+                HAIRCUT
+              </p>
+            </li>
+            <li class="gallery__item">
+              <p
+                class="gallery__text-hover gallery__text-hover--top"
+                aria-hidden="true"
+              >
+                BEARD
+              </p>
+              <p
+                class="gallery__text-hover gallery__text-hover--bottom"
+                aria-hidden="true"
+              >
+                TRIM
+              </p>
+            </li>
+            <li class="gallery__item">
+              <p
+                class="gallery__text-hover gallery__text-hover--top"
+                aria-hidden="true"
+              >
+                MUSTACHE
+              </p>
+              <p
+                class="gallery__text-hover gallery__text-hover--bottom"
+                aria-hidden="true"
+              >
+                TRIM
+              </p>
+            </li>
+            <li class="gallery__item">
+              <p
+                class="gallery__text-hover gallery__text-hover--top"
+                aria-hidden="true"
+              >
+                STRAIGHT
+              </p>
+              <p
+                class="gallery__text-hover gallery__text-hover--bottom"
+                aria-hidden="true"
+              >
+                RAZOR SHAVE
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="contact section"
+        aria-labelledby="contact__title-global"
+      >
+        <h2 id="contact__title-global" class="visually-hidden">
+          Online-booking and Contacts
+        </h2>
+        <div class="container">
+          <section class="contact__booking">
+            <h2 class="contact__title">Online-booking</h2>
+            <form class="booking-form" id="form-contact" action="#">
+              <div class="booking-form__required">
+                <div class="booking-form__field">
+                  <input
+                    type="text"
+                    class="booking-form__input"
+                    name="name-contact"
+                    id="name"
+                    placeholder="Name"
+                    minlength="3"
+                    required
+                    autocomplete="off"
+                  />
+                  <label class="booking-form__label" for="name">name*</label>
+                </div>
+                <div class="booking-form__field">
+                  <input
+                    type="tel"
+                    id="tel"
+                    class="booking-form__input"
+                    name="tel-contact"
+                    placeholder="+1 (000) 000-0000"
+                    pattern="^\+1\s\(\d{3}\)\s\d{3}-\d{4}$"
+                    autocomplete="off"
+                    required
+                  />
+                  <label class="booking-form__label" for="tel">phone*</label>
+                </div>
+              </div>
+              <div class="booking-form__field">
+                <textarea
+                  class="booking-form__input booking-form__textarea"
+                  name="comment"
+                  id="message"
+                  rows="5"
+                  placeholder="Type your message"
+                ></textarea>
+                <label class="booking-form__label" for="message">message</label>
+              </div>
+              <button class="button" type="submit">Send</button>
+            </form>
+          </section>
+          <section class="contact__details">
+            <h2 class="contact__title">Contacts</h2>
+            <address class="contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link contacts__link--address link"
+                    href="https://goo.gl/maps/Xx1234Example"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                  >
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <span class="contacts__text">
+                      123 Main Street<br />
+                      New York, NY 10001
+                    </span>
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link link" href="tel:+15551234567">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                    +1 (555) 123-4567
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link link"
+                    href="mailto:barbershop@email.com"
+                  >
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <p class="contact__label">Working hours</p>
+            <p class="contact__value">Every day from 9:00 to 22:00</p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__copyright">
+        <div class="footer__box">
+          <small class="footer__text">© Copyright 2024</small>
+          <small class="footer__text">2025 │ Developed by Alesha74111</small>
+        </div>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link link">Instagram</a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link link">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="modal-backdrop is-hidden" data-backdrop>
+      <div
+        class="modal"
+        role="dialog"
+        aria-labelledby="modal-title"
+        aria-modal="true"
+      >
+        <button
+          type="button"
+          class="modal__close-btn"
+          data-close-modal
+          aria-label="Close modal"
+        >
+          <svg class="modal__icon" width="20" height="20">
+            <use href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p id="modal-title" class="modal__title">Contact Us</p>
+        <form action="#" class="modal-form" id="form-modal">
+          <label class="modal-form__field">
+            <input
+              type="text"
+              class="modal-form__input"
+              placeholder="enter name"
+              name="name"
+              autocomplete="off"
+              required
+            />
+            <span class="modal-form__label">name</span>
+            <svg width="18" height="18" class="modal-form__icon">
+              <use href="img/sprite.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="modal-form__field">
+            <input
+              type="tel"
+              class="modal-form__input"
+              autocomplete="off"
+              placeholder="enter phone number"
+              name="phone-number"
+              pattern="[\+]?1?\s?\(?\d{3}\)?[\s\-]?\d{3}[\-]?\d{4}"
+              title="e.g. +1 (555) 123-4567 or (555) 123-4567"
+              value="+1"
+              required
+            />
+            <span class="modal-form__label">phone</span>
+            <svg width="18" height="18" class="modal-form__icon">
+              <use href="img/sprite.svg#icon-phone-black"></use>
+            </svg>
+          </label>
+          <label class="modal-form__field">
+            <input
+              type="email"
+              class="modal-form__input"
+              autocomplete="off"
+              placeholder="enter email"
+              name="email"
+              required
+            />
+            <span class="modal-form__label">email</span>
+            <svg width="18" height="18" class="modal-form__icon">
+              <use href="img/sprite.svg#icon-email-black"></use>
+            </svg>
+          </label>
+          <fieldset class="modal-form__group">
+            <legend class="modal-form__legend">Who will shave?</legend>
+            <ul class="modal-form__option-list">
+              <li class="modal-form__option-item">
+                <label class="modal-form__checkbox-label">
+                  <input
+                    type="radio"
+                    class="modal-form__checkbox"
+                    name="shave"
+                    value="grandfather"
+                  />
+                  <span class="modal-form__checkbox-icon circle"></span>
+                  <span>Grandfather</span>
+                </label>
+              </li>
+              <li class="modal-form__option-item">
+                <label class="modal-form__checkbox-label">
+                  <input
+                    type="radio"
+                    class="modal-form__checkbox"
+                    name="shave"
+                    value="dad"
+                    checked
+                  />
+                  <span class="modal-form__checkbox-icon circle"></span>
+                  <span>Dad</span>
+                </label>
+              </li>
+              <li class="modal-form__option-item">
+                <label class="modal-form__checkbox-label">
+                  <input
+                    type="radio"
+                    class="modal-form__checkbox"
+                    name="shave"
+                    value="son"
+                  />
+                  <span class="modal-form__checkbox-icon circle"></span>
+                  <span>Son</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="modal-form__group">
+            <legend class="modal-form__legend">Select tool</legend>
+            <ul class="modal-form__option-list">
+              <li class="modal-form__option-item">
+                <label class="modal-form__checkbox-label">
+                  <input
+                    type="checkbox"
+                    class="modal-form__checkbox"
+                    name="tool"
+                    value="scissors"
+                    checked
+                  />
+                  <span class="modal-form__checkbox-icon"></span>
+                  <span>Scissors</span>
+                </label>
+              </li>
+              <li class="modal-form__option-item">
+                <label class="modal-form__checkbox-label">
+                  <input
+                    type="checkbox"
+                    class="modal-form__checkbox"
+                    name="tool"
+                    value="hair-trimmer"
+                  />
+                  <span class="modal-form__checkbox-icon"></span>
+                  <span>Hair trimmer</span>
+                </label>
+              </li>
+              <li class="modal-form__option-item">
+                <label class="modal-form__checkbox-label">
+                  <input
+                    type="checkbox"
+                    class="modal-form__checkbox"
+                    name="tool"
+                    value="razor-blade"
+                  />
+                  <span class="modal-form__checkbox-icon"></span>
+                  <span>Razor blade</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="modal-form__city-select">
+            <label for="city-select" class="modal-form__legend"
+              >Select city</label
+            >
+            <select
+              id="city-select"
+              class="modal-form__select"
+              name="city"
+              aria-required="true"
+            >
+              <option value="new-york">New York</option>
+              <option value="los-angeles">Los Angeles</option>
+              <option value="chicago">Chicago</option>
+              <option value="houston">Houston</option>
+              <option value="miami">Miami</option>
+            </select>
+          </div>
+          <label class="modal-form__field">
+            <textarea
+              class="modal-form__textarea"
+              name="comment"
+              rows="7"
+              placeholder="type your message"
+            ></textarea>
+            <span class="modal-form__comment-label">message*</span>
+          </label>
+          <label
+            class="modal-form__checkbox-label modal-form__checkbox-label--policy"
+          >
+            <input
+              class="modal-form__checkbox"
+              type="checkbox"
+              name="policy"
+              value="accept policy"
+            />
+            <span class="modal-form__checkbox-icon"></span>
+            <span class="modal-form__policy-text"
+              >I agree to the
+              <a class="modal-form__policy-link" href="./index.html"
+                >Terms & Conditions
+              </a>
+              and
+              <a class="modal-form__policy-link" href="./index.html"
+                >Privacy Policy</a
+              ></span
+            >
+          </label>
+          <button class="button button--black" type="submit">send</button>
+        </form>
+      </div>
+    </div>
+    <button
+      id="scrollTopBtn"
+      class="scroll-top-btn hidden"
+      aria-label="Scroll to top"
+    >
+      ↑
+    </button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

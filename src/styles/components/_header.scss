@@ -1,0 +1,82 @@
+.header {
+    &--fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px 15px;
+        gap: 15px;
+        background-color: rgba(25, 28, 38, 0.2);
+        transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+        @include respond(lg) {
+            padding: 15px 10px;    
+        }
+        @include respond(md) {
+            padding: 15px 10px;
+            justify-content: space-between;
+        }
+        &--scrolled {
+            background-color: rgba(25, 28, 38, 0.5);
+            backdrop-filter: blur(4px);
+        }
+    }
+    &__logo {
+        display: inline-block;
+        width: 69px;
+        height: 56px;
+        margin-right: 130px;
+        color: $primary-white-color;
+        transition: color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+        @include respond(lg) {
+            margin-right: 25px;
+        }
+        &:hover,
+        &:focus {
+            @extend %hover-focus-style;
+        }
+    }
+    &__nav {
+        margin-right: auto;
+        @include respond(md){
+            display: none;
+        }
+    }
+    &__contacts{
+        @extend %flex;
+        gap: 40px;
+        justify-content: space-between;
+        @include respond(lg){
+            align-items: center;
+            gap: 20px;
+        }
+        @include respond(md) {
+            display: none;
+        }
+    }
+}
+.header-burger{
+    display: none;
+    align-items: center;
+    @extend %common-link;
+    color: $primary-white-color;
+    @include respond(md){
+        display: flex;
+    }
+        & .header-burger__text {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: $accent-color;
+        margin-bottom: 5px;
+    }
+}

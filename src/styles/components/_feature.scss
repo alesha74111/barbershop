@@ -1,0 +1,109 @@
+.feature {
+    >.container {
+        @extend %flex;
+        gap: 30px;
+        @include respond(md) {
+            flex-direction: column-reverse;
+        }
+    }
+    &__list {
+        @extend %flex;
+        flex-wrap: wrap;
+        padding-left: 100px;
+        padding-right: 100px;
+        @extend %two-column-width;
+        @extend %list;
+        @include respond(xll) {
+            padding-left: 0px;
+            padding-right: 0px;
+            justify-content: space-evenly;
+        }
+        @include respond(md) {
+            align-items: center;
+            width: 100%;
+        }
+        @include respond(sm) {
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            width: 100%;
+        }
+    }
+    &__item {
+        width: 170px;
+        height: 133px;
+        padding: 20px 24px;
+        text-align: center;
+        background: $secondary-bg-color;
+        box-shadow: 4px 4px 8px rgb(0 0 0 / 10%);
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+        &:nth-child(2n) {
+            margin-top: 30px;
+        }
+        @include respond(md) {
+            width: calc(50% - 15px);
+            margin: 0 0 30px 0;
+            &:nth-child(2n+1) {
+                margin-right: 30px;
+            }
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+        @include respond(sm) {
+            width: 70%;
+            margin: 0;
+            &:nth-child(2n),
+            &:nth-child(2n+1) {
+                margin-top: 0;
+            }
+        }
+    }
+    &__number {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 6px;
+        font-weight: $bold-font;
+        font-size: 42px;
+        line-height: 1.357;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: $secondary-color;
+        &::after {
+            content: "+";
+            position: absolute;
+            top: 7px;
+            font-weight: $medium-font;
+            font-size: 16px;
+            line-height: 1.37;
+            text-align: center;
+            color: $accent-color;
+        }
+    }
+    &__text {
+        margin: 0;
+        font-weight: $medium-font;
+        font-size: 11px;
+        line-height: 1.363;
+        text-align: center;
+        color: $secondary-color;
+    }
+    &__content {
+        @extend %two-column-width;
+        @include respond(md) {
+            width: 100%;
+        }
+    }
+    &__title {
+        @extend %section-title;
+    }
+    &__subtitle {
+        @extend %section-subtitle;
+        color: $secondary-color;
+    }
+    &__description {
+        @extend %section-description;
+    }
+}

@@ -1,0 +1,71 @@
+@import "helpers/mixins";
+%hover-focus-style {
+    color: $accent-color; 
+}
+%link-style {
+    text-decoration: none;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        @extend %hover-focus-style;
+    } }
+%common-link {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: $medium-font;
+    font-size: 12px;
+    line-height: 1.363;
+    @extend %link-style;
+    }
+%flex{
+    display: flex;
+}  
+%list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+%section-title{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: $secondary-font;
+    font-weight: $bold-font;
+    font-size: 42px;
+    line-height: 1.166;
+    letter-spacing: 0.05em;
+    color: $secondary-color;
+    @include respond(lg) {
+        font-size: 28px;
+    }
+}
+%section-subtitle {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: $medium-font;
+    font-size: 11px;
+    line-height: 1.363;
+    text-transform: uppercase;
+        &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 20px;
+        width: 60px;
+        height: 1px;
+        background: currentColor;
+    }
+}
+%section-description {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.666;
+    @include respond(lg) {
+        font-size: 16px;
+    }
+}
+%two-column-width{
+    width: calc((100% - 30px)/2);
+}

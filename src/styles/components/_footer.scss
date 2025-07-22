@@ -1,0 +1,44 @@
+.footer {
+    &__copyright {
+        @extend %flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        @include respond(md) {
+            flex-direction: column-reverse;
+            gap: 35px;
+        }
+    }
+    &__box {
+        @extend %flex;
+        gap: 35px;
+    }
+    &__text {
+        margin: 0px;
+        font-weight: $medium-font;
+        font-size: 11px;
+        line-height: 1.363;
+        color: #9DA4BD;
+    }
+    &__social-list {
+        @extend %flex;
+        @extend %list;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 40px;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 60px;
+            height: 1px;
+            vertical-align: middle;
+            background: currentColor;
+        }
+    }
+    &__social-link {
+        @extend %common-link;
+        color: $secondary-color;
+    }
+}

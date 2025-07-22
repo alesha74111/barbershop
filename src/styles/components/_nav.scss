@@ -1,0 +1,14 @@
+.nav {
+    &__list {
+        @extend %flex;
+        @extend %list;
+        gap: 30px;
+        @include respond (lg){
+            gap: 20px;
+        }
+    }
+    &__link {
+        @extend %common-link;
+        color: $primary-white-color;
+    }
+}

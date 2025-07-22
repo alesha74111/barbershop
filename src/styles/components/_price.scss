@@ -1,0 +1,54 @@
+.price {
+    background-image: url(../img/price-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #111319;
+    &__subtitle {
+        @extend %section-subtitle;
+        color: $text-color;
+    }
+    &__title {
+        margin-bottom: 44px;
+        @extend %section-title;
+        color: $primary-white-color;
+    }
+    &__list-wrapper {
+        @extend %flex;
+        gap: 30px;
+        margin-bottom: 44px;
+        @include respond(md) {
+            flex-direction: column;
+        }
+    }
+    &__list {
+        width: calc((100% - 30px) / 2);
+        padding: 30px 20px;
+        @extend %list;
+        background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+        &:last-child {
+            background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+        }
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        @include respond(md) {
+            width: 100%;
+        }
+    }
+    &__item {
+        @extend %flex;
+        justify-content: space-between;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__line {
+        flex-grow: 1;
+        border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+    }
+    &__button-wrapper {
+        @extend %flex;
+        justify-content: center;
+    }
+}

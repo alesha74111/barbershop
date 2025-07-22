@@ -1,0 +1,23 @@
+$primary-color: #555555;
+$secondary-color: #303030;
+$accent-color: #FF6C00;
+$solid-color: #EEEEEE;
+$secondary-bg-color: #F7F7F7;
+$accent-bg-color: #191C26;
+$transparent-bg: rgba(0, 0, 0, 0);
+$primary-white-color: #FFFFFF;
+$text-color: rgba(157, 164, 189, 0.6);
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+$normal-font: 400;
+$medium-font: 600;
+$bold-font: 700;
+$primary-font-size: 14px;
+
+$breakpoint: (
+    'sm': 480px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1020px,
+    'xll': 1199px,
+);

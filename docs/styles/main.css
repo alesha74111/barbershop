@@ -2323,6 +2323,7 @@ textarea:-webkit-autofill {
 
   .sidebar-hero__title {
     font-size: 48px;
+    max-width: 350px;
   }
 
   .sidebar-hero__description {
@@ -2548,6 +2549,7 @@ textarea:-webkit-autofill {
   .sidebar-hero__title {
     font-size: 36px;
     margin-bottom: 35px;
+    max-width: 250px;
   }
 
   .feature__list {
